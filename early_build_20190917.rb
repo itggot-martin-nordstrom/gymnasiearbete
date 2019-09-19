@@ -36,8 +36,18 @@ def value_calc(hash, team1, team2, result)
 
     difference = (team1_elo - team2_elo).abs.to_i
 
-    change_value = (0.90**difference) * 10
-    draw_change = change_value * 0.4
+    # Värdet 8 går att variera, MEN VILKEN PÅVERKAN HAR DEN? Hur kan man beskriva det på ett bra sätt?
+    # Om skillnaden = 0 vinner eller förlorar man 8 "poäng"
+    # Om skillnaden är stor vinner/förlorar man färre poäng 
+    # Om skillnaden är liten vinner/förlorar man fler poäng 
+
+    
+    # Man måste ha ett annat värde på 1-x för att kunna räkna om det blir skräll. Då ska påverkan vara stor!!
+    change_value = (0.94**difference) * 5
+
+    # Om värdet är 0.5 hamnar de på samma position efter matchen => stor påverkan
+    # Om värdet är 0 påverkar en lika match inget => liten påverkan
+    draw_change = change_value * 0.2
 
     if result == "H"
         hash[team1] += change_value
@@ -67,9 +77,17 @@ def runner()
     end
 
     teams = teams.sort_by {|_key, value| value}.to_h
-    return teams
+    
+    return teams.to_a
 
 end
 
 
-new_file = File.write("results.txt",runner())
+
+
+## NEW FILE MAKER
+new_file = File.new("results.txt","w+")
+
+File.open("results.txt", "w+") do |e|
+    e.puts(runner())
+  end

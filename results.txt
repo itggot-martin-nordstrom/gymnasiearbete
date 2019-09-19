@@ -1,1 +1,40 @@
-{"Newcastle"=>-23.30911636372075, "Aston Villa"=>-18.60469843984067, "Watford"=>-17.007219767899134, "Wolves"=>-14.809696239600001, "Norwich"=>-12.061303717970752, "Bournemouth"=>-7.616679246030008, "Southampton"=>-7.045233486517237, "Crystal Palace"=>-4.033349011840008, "Brighton"=>0.5989578357320271, "Leicester"=>0.9333922005000002, "Chelsea"=>2.2690382447600026, "Sheffield United"=>3.3189724092438975, "Burnley"=>3.3778940390999996, "West Ham"=>5.55724084605479, "Everton"=>7.422817859178169, "Arsenal"=>13.399999266899133, "Tottenham"=>14.52614778205784, "Man United"=>14.537252618643347, "Liverpool"=>18.79157255327861, "Man City"=>19.75401061797075}
+Liverpool
+0
+West Ham
+0
+Bournemouth
+0
+Burnley
+0
+Crystal Palace
+0
+Watford
+0
+Tottenham
+0
+Leicester
+0
+Newcastle
+0
+Man United
+0
+Arsenal
+0
+Aston Villa
+0
+Brighton
+0
+Everton
+0
+Norwich
+0
+Southampton
+0
+Man City
+0
+Sheffield United
+0
+Chelsea
+0
+Wolves
+0
