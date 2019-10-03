@@ -27,6 +27,15 @@ def result_reader(data)
     return results
 end
 
+def goal_difference(h_score, a_score)
+    h_score = h_score.to_i
+    a_score = a_score.to_i
+
+    difference = (h_score - a_score).abs
+
+    return difference
+end
+
 
 # THE Ea & Eb OF THE CALCULATION
 def expected_output(team_elo, opp_elo)
@@ -37,15 +46,15 @@ def expected_output(team_elo, opp_elo)
 end
 
 #100 POINTS DIFFERENCE IS A 64% WIN, CHANGE THE 400 FOR CHANGE IN THISS
-p expected_output(100, 00)
+# p expected_output(100, 00)
 
 #THE R'A OF THE CALCULATION
-def new_value_calc(h_team, a_team, hash, result)
+def new_value_calc(h_team, a_team, hash, result, h_goals, a_goals)
 
     h_team_elo = hash[h_team] * 1.00
     a_team_elo = hash[a_team] * 1.00
 
-    # p h_team_elo
+    goal_difference = goal_difference(h_goals, a_goals) * 0.50
 
     h_expected = expected_output(h_team_elo, a_team_elo)
     a_expected = expected_output(a_team_elo, h_team_elo)
@@ -60,23 +69,23 @@ def new_value_calc(h_team, a_team, hash, result)
     predicted_correctly = false
 
     if result == "H"
-        hash[h_team] = h_team_elo + coefficent_k * (coefficent_win - h_expected)
-        hash[a_team] = a_team_elo + coefficent_k * (coefficent_loss - a_expected)
+        hash[h_team] = h_team_elo + coefficent_k * (coefficent_win - h_expected) * goal_difference
+        hash[a_team] = a_team_elo + coefficent_k * (coefficent_loss - a_expected) * goal_difference
         
         if h_team_elo > a_team_elo
             predicted_correctly = true
         end
     elsif result == "A"
-        hash[h_team] = h_team_elo + coefficent_k * (coefficent_loss - h_expected)
-        hash[a_team] = a_team_elo + coefficent_k * (coefficent_win - a_expected)
+        hash[h_team] = h_team_elo + coefficent_k * (coefficent_loss - h_expected) * goal_difference
+        hash[a_team] = a_team_elo + coefficent_k * (coefficent_win - a_expected) * goal_difference
 
         if a_team_elo > h_team_elo
             predicted_correctly = true
         end
 
     elsif result == "D" 
-        hash[h_team] = h_team_elo + coefficent_k * (coefficent_draw - h_expected)
-        hash[a_team] = a_team_elo + coefficent_k * (coefficent_draw - a_expected)
+        hash[h_team] = h_team_elo + coefficent_k * (coefficent_draw - h_expected) * goal_difference
+        hash[a_team] = a_team_elo + coefficent_k * (coefficent_draw - a_expected) * goal_difference
 
         #IS HOW LENIENT WE ARE WHEN COUNTING WITH DRAWS
         #40 GIVES A 55/45 WIN
@@ -119,7 +128,7 @@ def runner()
     predictions_result = []
     
     results.each do |element|
-        game = new_value_calc(element[3], element[4], teams, element[7])
+        game = new_value_calc(element[3], element[4], teams, element[7], element[5], element[6])
         
         teams = game[0]
         predictions_result << game[1]
