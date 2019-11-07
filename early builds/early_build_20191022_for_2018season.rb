@@ -52,7 +52,7 @@ end
 #THE R'A OF THE CALCULATION
 def new_value_calc(h_team, a_team, hash, result, h_goals, a_goals)
 
-    match_numbers = 3
+    match_numbers = 38
 
     h_team_current_elo = hash[h_team][hash[h_team].length - 1] * 1.00
     a_team_current_elo = hash[a_team][hash[a_team].length - 1] * 1.00
