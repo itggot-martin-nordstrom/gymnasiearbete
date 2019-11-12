@@ -81,7 +81,9 @@ def new_elo_calc(hash, game, coefficent_k, coefficent_draw, home_adv, matches, c
         hash[a_team] << a_team_elo + coefficent_k * (coefficent_draw - a_expected) + goal_difference
     end
 
-    prediction_outcome = predicted_correctly(h_team_elo, a_team_elo, game, 35)
+    
+
+    prediction_outcome = predicted_correctly(h_team_elo, a_team_elo, game, 25)
 
     return hash, prediction_outcome, result
 end

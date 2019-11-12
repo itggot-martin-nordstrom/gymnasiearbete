@@ -1,11 +1,1540 @@
-coefficient_k: 
+coefficient_k: 40
 coefficient_draw: 
 home_adv: 
 matches: 
-coefficient_goal: 
+coefficient_goal: 1
 
-Correct of Home: 0.3333333333333333 (18/54)
-Correct of Away: 0.35294117647058826 (12/34)
-Correct of Draw: 0.5625 (18/32)
-Correct of All: 0.4 (48/120)
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.1
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.1
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.1
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.1
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.1
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.1
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.1
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.2000000000000002
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.2000000000000002
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.2000000000000002
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.2000000000000002
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.2000000000000002
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.2000000000000002
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.2000000000000002
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.3000000000000003
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.3000000000000003
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.3000000000000003
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.3000000000000003
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.3000000000000003
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.3000000000000003
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.3000000000000003
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.4000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.4000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.4000000000000004
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.4000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.4000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.4000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.4000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.5000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.5000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.5000000000000004
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.5000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.5000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.5000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.5000000000000004
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.6000000000000005
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.6000000000000005
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.6000000000000005
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.6000000000000005
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.6000000000000005
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.6000000000000005
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.6000000000000005
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.7000000000000006
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.7000000000000006
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.7000000000000006
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.7000000000000006
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.7000000000000006
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.7000000000000006
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.7000000000000006
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.8000000000000007
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.8000000000000007
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.8000000000000007
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.8000000000000007
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.8000000000000007
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.8000000000000007
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.8000000000000007
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.9000000000000008
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.9000000000000008
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.9000000000000008
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.9000000000000008
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.9000000000000008
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.9000000000000008
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 1.9000000000000008
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.000000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.000000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.000000000000001
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.000000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.000000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.000000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.000000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.100000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.100000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.100000000000001
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.100000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.100000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.100000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.100000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.200000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.200000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.200000000000001
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.200000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.200000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.200000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.200000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.300000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.300000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.300000000000001
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.300000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.300000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.300000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.300000000000001
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.4000000000000012
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.4000000000000012
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.4000000000000012
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.4000000000000012
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.4000000000000012
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.4000000000000012
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.4000000000000012
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.5000000000000013
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.5000000000000013
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.5000000000000013
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.5000000000000013
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.5000000000000013
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.5000000000000013
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.5000000000000013
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.6000000000000014
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.6000000000000014
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.6000000000000014
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.6000000000000014
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.6000000000000014
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.6000000000000014
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.6000000000000014
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.7000000000000015
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.7000000000000015
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.7000000000000015
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.7000000000000015
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.7000000000000015
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.7000000000000015
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.7000000000000015
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.8000000000000016
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.8000000000000016
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.8000000000000016
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.8000000000000016
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.8000000000000016
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.8000000000000016
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.8000000000000016
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 40
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.9000000000000017
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5294117647058824 (18/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 45
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.9000000000000017
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.15625 (5/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 50
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.9000000000000017
+
+Correct of Home: 0.6111111111111112 (33/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4666666666666667 (56/120)
+---------
+coefficient_k: 55
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.9000000000000017
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 60
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.9000000000000017
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 65
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.9000000000000017
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
+---------
+coefficient_k: 70
+coefficient_draw: 
+home_adv: 
+matches: 
+coefficient_goal: 2.9000000000000017
+
+Correct of Home: 0.5925925925925926 (32/54)
+Correct of Away: 0.5588235294117647 (19/34)
+Correct of Draw: 0.125 (4/32)
+Correct of All: 0.4583333333333333 (55/120)
 ---------

@@ -1,3 +1,5 @@
+
+
 def read_data(file)
     data = File.readlines(file).map do |element|
         array = element.split(",")
