@@ -1,13 +1,21 @@
+require_relative "prediction.rb"
 
-
-def goal_difference(h_score, a_score)
-    h_score = h_score.to_i
-    a_score = a_score.to_i
+#   Gives the goal difference in a game after full time.
+#
+#   game - The game that was played with all the data; a single line in the data document. ex) [E0,09/08/2019,20:00,Liverpool,Norwich,4,1,H,4,0,H...]
+#
+#   ft_goal_difference("E0,09/08/2019,20:00,Liverpool,Norwich,4,1,H,4,0,H...")
+#       =>  3
+#
+def ft_goal_difference(game)
+    h_score = game[5].to_i
+    a_score = game[6].to_i
 
     difference = (h_score - a_score).abs
 
     return difference
 end
+
 
 #   Gives a new ELO rating based on a trend over the course of a certain number of matches. 
 #   If this number is larger than the number of games played, the value is the latest game's ELO (- 0).
@@ -19,7 +27,7 @@ end
 #   elo_from_matches("Liverpool", {"Liverpool" => [0,40,30,12,40]}, 2)
 #       =>  28
 #
-#   elo_from_matches("Liverpool", {"Chelsea" => [0,10,31,20]}, 30)
+#   elo_from_matches("Chelsea", {"Chelsea" => [0,10,31,20]}, 30)
 #       => 20
 #
 def elo_from_matches(team, teams_hash, matches)
@@ -37,14 +45,16 @@ end
 
 
 #THE R'A OF THE CALCULATION
-def new_elo_calc(h_team, a_team, hash, game)
+def new_elo_calc(hash, game, coefficent_k, coefficent_draw, home_adv, matches, coefficent_goal)
 
-    # goal_difference = 1.30**goal_difference(h_goals, a_goals)
-    goal_difference = 1
+    goal_difference = coefficent_goal**ft_goal_difference(game)
+    # goal_difference = 1
+    h_team = game[3]
+    a_team = game[4]
+    result = game[7]
+    # matches = 5
 
-    matches = 5
-
-    h_team_elo = elo_from_matches(h_team, hash, matches)
+    h_team_elo = elo_from_matches(h_team, hash, matches) * home_adv
     a_team_elo = elo_from_matches(a_team, hash, matches)
 
     h_expected = expected_output(h_team_elo, a_team_elo)
@@ -52,40 +62,56 @@ def new_elo_calc(h_team, a_team, hash, game)
 
 
     #THESE NUMBERS DETERMINE THE PREDICTION PERCENTAGE, AMONG OTHER THINGS
-    coefficent_k = 18.00
+    # coefficent_k = 18.00
     coefficent_win = 1.00
-    coefficent_draw = 0.40
+    # coefficent_draw = 0.40
     coefficent_loss = 0.00
 
 
     if result == "H"
-        hash[h_team] << h_team_elo + coefficent_k * (coefficent_win - h_expected) * goal_difference
-        hash[a_team] << a_team_elo + coefficent_k * (coefficent_loss - a_expected) * goal_difference
+        hash[h_team] << h_team_elo + coefficent_k * (coefficent_win - h_expected) + goal_difference
+        hash[a_team] << a_team_elo + coefficent_k * (coefficent_loss - a_expected) + goal_difference
         
     elsif result == "A"
-        hash[h_team] << h_team_elo + coefficent_k * (coefficent_loss - h_expected) * goal_difference
-        hash[a_team] << a_team_elo + coefficent_k * (coefficent_win - a_expected) * goal_difference
+        hash[h_team] << h_team_elo + coefficent_k * (coefficent_loss - h_expected) + goal_difference
+        hash[a_team] << a_team_elo + coefficent_k * (coefficent_win - a_expected) + goal_difference
 
     elsif result == "D" 
-        hash[h_team] << h_team_elo + coefficent_k * (coefficent_draw - h_expected) * goal_difference
-        hash[a_team] << a_team_elo + coefficent_k * (coefficent_draw - a_expected) * goal_difference
+        hash[h_team] << h_team_elo + coefficent_k * (coefficent_draw - h_expected) + goal_difference
+        hash[a_team] << a_team_elo + coefficent_k * (coefficent_draw - a_expected) + goal_difference
     end
 
-    # p hash[h_team]
+    prediction_outcome = predicted_correctly(h_team_elo, a_team_elo, game, 35)
 
-    return hash 
+    return hash, prediction_outcome, result
 end
 
-# LENIENCY IS A OPTIMISING VARIABLE
+
+#   Determines if we predicted the outcome of a game correctly.
+#
+#   h_team_elo - The home team's ELO before the game.
+#   a_team_elo - The away team's ELO before the game.
+#   game - The game that was played with all the data; a single line in the data document. ex) [E0,09/08/2019,20:00,Liverpool,Norwich,4,1,H,4,0,H...]
+#   leniency - Determines in what span we predict draws. A value of 35 gives ~55/45. 
+#
+#   predicted_correctly(100, 0, [E0...Liverpool,Norwich,4,1,H...], 40)
+#       =>  true
+#
+#   predicted_correctly(57, 63, [E0...Liverpool,Norwich,4,1,H...], 10)
+#       =>  true
+#
+#   predicted_correctly(50, 70, [E0...Liverpool,Norwich,4,1,H...], 10)
+#       =>  false
+#
 def predicted_correctly(h_team_elo, a_team_elo, game, leniency)
     predicted_correctly = false
     result = game[7]
 
     if result == "H" && h_team_elo > a_team_elo && (h_team_elo - a_team_elo).abs > leniency
         predicted_correctly = true
-    elsif result == "A" && h_team_elo > a_team_elo && (h_team_elo - a_team_elo).abs > leniency
+    elsif result == "A" && h_team_elo < a_team_elo && (h_team_elo - a_team_elo).abs > leniency
         predicted_correctly = true
-    elsif result == "D" && (h_team_elo - a_team_elo).abs < leniency
+    elsif result == "D" && (h_team_elo - a_team_elo).abs <= leniency
         predicted_correctly = true
     end
 

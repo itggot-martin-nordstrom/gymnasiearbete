@@ -18,6 +18,8 @@ def team_elo_hash(data)
     return teams
 end
 
+# p team_elo_hash(read_data('data_2019-11-05.csv'))
+
 #ARRAY OF ALL PLAYED RESULTS
 def result_reader(data)
     results = data.select do |element|
@@ -27,7 +29,8 @@ def result_reader(data)
     return results
 end
 
-teams_hash = team_elo_hash(read_data('data_2019-11-05.csv'))
-results = result_reader(read_data('data_2019-11-05.csv'))
+# teams_hash = team_elo_hash(read_data('data_2019-11-05.csv'))
+# results = result_reader(read_data('data_2019-11-05.csv'))
 
-p teams_hash
+# p teams_hash
+# p results

@@ -54,10 +54,11 @@ def new_value_calc(h_team, a_team, hash, result, h_goals, a_goals)
 
     match_numbers = 38
 
-    h_team_current_elo = hash[h_team][hash[h_team].length - 1] * 1.00
+    # HOME ADVANTAGE
+    h_team_current_elo = hash[h_team][hash[h_team].length - 1] * 2.00
     a_team_current_elo = hash[a_team][hash[a_team].length - 1] * 1.00
 
-    p hash[h_team][hash[h_team].length - match_numbers]
+    # p hash[h_team][hash[h_team].length - match_numbers]
     # p [hash[h_team].length - match_numbers]
     # p hash[h_team]
 
@@ -85,14 +86,17 @@ def new_value_calc(h_team, a_team, hash, result, h_goals, a_goals)
     coefficent_win = 1.00
     coefficent_draw = 0.40
     coefficent_loss = 0.00
-
+    
+    #IS HOW LENIENT WE ARE WHEN COUNTING WITH DRAWS
+    #40 GIVES A 55/45 WIN
+    coefficent_draw_leniency = 40
     # p h_team_elo + coefficent_k * (coefficent_win - h_expected)
     
     if result == "H"
         hash[h_team] << h_team_elo + coefficent_k * (coefficent_win - h_expected) * goal_difference
         hash[a_team] << a_team_elo + coefficent_k * (coefficent_loss - a_expected) * goal_difference
         
-        if h_team_elo > a_team_elo
+        if h_team_elo > a_team_elo && (h_team_elo - a_team_elo).abs > coefficent_draw_leniency
             predicted_correctly = [true, "W"]
         else
             predicted_correctly = [false, "W"]
@@ -101,7 +105,7 @@ def new_value_calc(h_team, a_team, hash, result, h_goals, a_goals)
         hash[h_team] << h_team_elo + coefficent_k * (coefficent_loss - h_expected) * goal_difference
         hash[a_team] << a_team_elo + coefficent_k * (coefficent_win - a_expected) * goal_difference
         
-        if a_team_elo > h_team_elo
+        if a_team_elo > h_team_elo && (h_team_elo - a_team_elo).abs > coefficent_draw_leniency
             predicted_correctly = [true, "A"]
         else
             predicted_correctly = [false, "A"]
@@ -112,11 +116,8 @@ def new_value_calc(h_team, a_team, hash, result, h_goals, a_goals)
         hash[h_team] << h_team_elo + coefficent_k * (coefficent_draw - h_expected) * goal_difference
         hash[a_team] << a_team_elo + coefficent_k * (coefficent_draw - a_expected) * goal_difference
         
-        #IS HOW LENIENT WE ARE WHEN COUNTING WITH DRAWS
-        #40 GIVES A 55/45 WIN
-        coefficent_draw_leniency = 40
         
-        if (a_team_elo - h_team_elo).abs < coefficent_draw_leniency
+        if (a_team_elo - h_team_elo).abs <= coefficent_draw_leniency
             predicted_correctly = [true, "D"]
         else
             predicted_correctly = [false, "D"]
