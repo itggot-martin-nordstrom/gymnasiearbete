@@ -20,6 +20,36 @@ def expected_output(team_elo, opp_elo)
     return expected_output
 end
 
+#   Determines if we predicted the outcome of a game correctly.
+#
+#   h_team_elo - The home team's ELO before the game.
+#   a_team_elo - The away team's ELO before the game.
+#   game - The game that was played with all the data; a single line in the data document. ex) [E0,09/08/2019,20:00,Liverpool,Norwich,4,1,H,4,0,H...]
+#   leniency - Determines in what span we predict draws. A value of 35 gives ~55/45. 
+#
+#   predicted_correctly(100, 0, [E0...Liverpool,Norwich,4,1,H...], 40)
+#       =>  true
+#
+#   predicted_correctly(57, 63, [E0...Liverpool,Norwich,4,1,H...], 10)
+#       =>  true
+#
+#   predicted_correctly(50, 70, [E0...Liverpool,Norwich,4,1,H...], 10)
+#       =>  false
+#
+def predicted_correctly(h_team_elo, a_team_elo, game, leniency)
+    predicted_correctly = false
+    result = game[7]
+
+    if result == "H" && h_team_elo > a_team_elo && (h_team_elo - a_team_elo).abs > leniency
+        predicted_correctly = true
+    elsif result == "A" && h_team_elo < a_team_elo && (h_team_elo - a_team_elo).abs > leniency
+        predicted_correctly = true
+    elsif result == "D" && (h_team_elo - a_team_elo).abs <= leniency
+        predicted_correctly = true
+    end
+
+    return predicted_correctly
+end
 
 #   Collects the predictions based on how it ended.
 #
@@ -76,11 +106,11 @@ def correctly_percentage(hash)
             i += 1
         end
     
-        percentage = "Correct of #{e[0].capitalize}: #{count/(array.length * 1.00)} (#{count}/#{array.length})"
+        percentage = count*1.0/array.length
         output << percentage
     end
 
-    output << "Correct of All: #{correct_matches*1.0/number_of_matches} (#{correct_matches}/#{number_of_matches})"
+    output << correct_matches*1.0/number_of_matches
 
     return output
 end
