@@ -8,8 +8,8 @@ require_relative "prediction.rb"
 #       =>  3
 #
 def ft_goal_difference(game)
-    h_score = game[5].to_i
-    a_score = game[6].to_i
+    h_score = game["FTHG"].to_i
+    a_score = game["FTAG"].to_i
 
     difference = (h_score - a_score).abs
 
@@ -46,14 +46,15 @@ end
 
 
 #THE R'A OF THE CALCULATION
-def new_elo_calc(hash, game, coefficent_k, coefficent_draw, home_adv, matches, coefficent_goal)
+def new_elo_calc(hash, game, coefficent_k, coefficent_draw, home_adv, matches, coefficent_goal, draw_leniency)
 
     goal_difference = coefficent_goal**ft_goal_difference(game)
     # goal_difference = 1
-    h_team = game[3]
-    a_team = game[4]
-    result = game[7]
+    h_team = game["HomeTeam"]
+    a_team = game["AwayTeam"]
+    result = game["FTR"]
     # matches = 5
+    # p hash
 
     h_team_elo = elo_from_matches(h_team, hash, matches) * home_adv
     a_team_elo = elo_from_matches(a_team, hash, matches)
@@ -70,21 +71,21 @@ def new_elo_calc(hash, game, coefficent_k, coefficent_draw, home_adv, matches, c
 
 
     if result == "H"
-        hash[h_team] << h_team_elo + coefficent_k * (coefficent_win - h_expected) + goal_difference
-        hash[a_team] << a_team_elo + coefficent_k * (coefficent_loss - a_expected) + goal_difference
+        hash[h_team] << h_team_elo + coefficent_k * (coefficent_win - h_expected) * goal_difference
+        hash[a_team] << a_team_elo + coefficent_k * (coefficent_loss - a_expected) * goal_difference
         
     elsif result == "A"
-        hash[h_team] << h_team_elo + coefficent_k * (coefficent_loss - h_expected) + goal_difference
-        hash[a_team] << a_team_elo + coefficent_k * (coefficent_win - a_expected) + goal_difference
+        hash[h_team] << h_team_elo + coefficent_k * (coefficent_loss - h_expected) * goal_difference
+        hash[a_team] << a_team_elo + coefficent_k * (coefficent_win - a_expected) * goal_difference
 
     elsif result == "D" 
-        hash[h_team] << h_team_elo + coefficent_k * (coefficent_draw - h_expected) + goal_difference
-        hash[a_team] << a_team_elo + coefficent_k * (coefficent_draw - a_expected) + goal_difference
+        hash[h_team] << h_team_elo + coefficent_k * (coefficent_draw - h_expected) * goal_difference
+        hash[a_team] << a_team_elo + coefficent_k * (coefficent_draw - a_expected) * goal_difference
     end
 
     
 
-    prediction_outcome = predicted_correctly(h_team_elo, a_team_elo, game, 25)
+    prediction_outcome = predicted_correctly(h_team_elo, a_team_elo, result, draw_leniency)
 
     return hash, prediction_outcome, result
 end

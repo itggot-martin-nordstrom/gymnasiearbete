@@ -22,32 +22,35 @@ end
 def results_handler()
     results = []
     file = 'data_2019-11-12.csv'
-    data = read_data(file)
-    teams_hash = team_elo_hash(data)
-    game_results = result_reader(data)
+    game_results = csv_to_h(file)
+    teams_hash = team_elo_hash(game_results)
     # p results
 
-    value_generator(0,1,0.1).each do |draw|
-        value_generator(10,15,1).each do |matches|
-            value_generator(1.1,3,0.2).each do |home_adv|
-                value_generator(0,2,0.2).each do |goal|
-                    value_generator(10,30,2).each do |k|
-                        array = []
+    value_generator(0,0.3,0.05).each do |draw|
+        value_generator(100,100,1).each do |matches|
+            value_generator(1.0,2,0.1).each do |home_adv|
+                value_generator(1,4,0.5).each do |goal|
+                    value_generator(40,70,10).each do |leniency|
+                        value_generator(16,40,2).each do |k|
+                            array = []
 
-                        program_handler(teams_hash, game_results, k, draw, home_adv, matches, goal).each do |e|
-                            array << e
+                            program_handler(teams_hash, game_results, k, draw, home_adv, matches, goal, leniency).each do |e|
+                                array << e
+                            end
+
+                            hash = {}
+
+                            hash[:k] = k
+                            hash[:draw] = draw
+                            hash[:home_adv] = home_adv
+                            hash[:matches] = matches
+                            hash[:goal] = goal
+                            hash[:leniency] = leniency
+                                                    
+                            array << hash
+
+                            results << array
                         end
-
-                        hash = {}
-
-                        hash[:k] = k
-                        hash[:draw] = draw
-                        hash[:home_adv] = home_adv
-                        hash[:goal] = goal
-                                                
-                        array << hash
-
-                        results << array
                     end
                 end
             end
@@ -65,7 +68,6 @@ def max_percentage(saved, comp_array)
 
     while i < saved.length
 
-        # INDEXERING ÄR FEL
         if saved[i][3] < saved[lowest_index][3]
             lowest_index = i
         end
@@ -84,11 +86,11 @@ end
 
 
 
-def program_handler(teams_hash, results, coeficcient_k, coefficient_draw, home_adv, matches, coefficient_goal)
+def program_handler(teams_hash, results, coeficcient_k, coefficient_draw, home_adv, matches, coefficient_goal, leniency)
 
     our_predictions = {home: [], away:[], draw:[]}
     results.each do |element|
-        game = new_elo_calc(teams_hash, element, coeficcient_k, coefficient_draw, home_adv, matches, coefficient_goal)
+        game = new_elo_calc(teams_hash, element, coeficcient_k, coefficient_draw, home_adv, matches, coefficient_goal, leniency)
         
         our_predictions = our_predictions(our_predictions, game[1], game[2])
         

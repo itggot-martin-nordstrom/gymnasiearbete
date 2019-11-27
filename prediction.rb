@@ -36,9 +36,8 @@ end
 #   predicted_correctly(50, 70, [E0...Liverpool,Norwich,4,1,H...], 10)
 #       =>  false
 #
-def predicted_correctly(h_team_elo, a_team_elo, game, leniency)
+def predicted_correctly(h_team_elo, a_team_elo, result, leniency)
     predicted_correctly = false
-    result = game[7]
 
     if result == "H" && h_team_elo > a_team_elo && (h_team_elo - a_team_elo).abs > leniency
         predicted_correctly = true
