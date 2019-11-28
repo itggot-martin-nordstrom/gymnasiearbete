@@ -5,7 +5,7 @@ require_relative "optimising.rb"
 
 #OPTIMISING
 def optimal_handler(results)
-    number_of_saved = 5
+    number_of_saved = 3
 
     i = number_of_saved
     # p results[0]

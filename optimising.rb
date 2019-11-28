@@ -21,17 +21,17 @@ end
 
 def results_handler()
     results = []
-    file = 'data_2019-11-12.csv'
+    file = 'results_2016-2017season.csv'
     game_results = csv_to_h(file)
     teams_hash = team_elo_hash(game_results)
     # p results
 
-    value_generator(0,0.3,0.05).each do |draw|
+    value_generator(0,0.2,0.1).each do |draw|
         value_generator(100,100,1).each do |matches|
-            value_generator(1.0,2,0.1).each do |home_adv|
-                value_generator(1,4,0.5).each do |goal|
-                    value_generator(40,70,10).each do |leniency|
-                        value_generator(16,40,2).each do |k|
+            value_generator(1.0,1.1,0.01).each do |home_adv|
+                value_generator(1,5,0.4).each do |goal|
+                    value_generator(0,0,1).each do |leniency|
+                        value_generator(20,40,2).each do |k|
                             array = []
 
                             program_handler(teams_hash, game_results, k, draw, home_adv, matches, goal, leniency).each do |e|
@@ -77,6 +77,8 @@ def max_percentage(saved, comp_array)
 
     if comp_array[3] > saved[lowest_index][3]
         saved[lowest_index] = comp_array
+    elsif comp_array[3] == saved[lowest_index][3]
+        saved << comp_array
     end
 
     return saved
