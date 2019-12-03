@@ -71,16 +71,16 @@ def new_elo_calc(hash, game, coefficent_k, coefficent_draw, home_adv, matches, c
 
 
     if result == "H"
-        hash[h_team] << h_team_elo + coefficent_k * (coefficent_win - h_expected) * goal_difference
-        hash[a_team] << a_team_elo + coefficent_k * (coefficent_loss - a_expected) * goal_difference
+        hash[h_team] << h_team_elo + coefficent_k * (coefficent_win - h_expected) + goal_difference
+        hash[a_team] << a_team_elo + coefficent_k * (coefficent_loss - a_expected) + goal_difference
         
     elsif result == "A"
-        hash[h_team] << h_team_elo + coefficent_k * (coefficent_loss - h_expected) * goal_difference
-        hash[a_team] << a_team_elo + coefficent_k * (coefficent_win - a_expected) * goal_difference
+        hash[h_team] << h_team_elo + coefficent_k * (coefficent_loss - h_expected) + goal_difference
+        hash[a_team] << a_team_elo + coefficent_k * (coefficent_win - a_expected) + goal_difference
 
     elsif result == "D" 
-        hash[h_team] << h_team_elo + coefficent_k * (coefficent_draw - h_expected) * goal_difference
-        hash[a_team] << a_team_elo + coefficent_k * (coefficent_draw - a_expected) * goal_difference
+        hash[h_team] << h_team_elo + coefficent_k * (coefficent_draw - h_expected) + goal_difference
+        hash[a_team] << a_team_elo + coefficent_k * (coefficent_draw - a_expected) + goal_difference
     end
 
     

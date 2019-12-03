@@ -31,7 +31,7 @@ end
 
 start_time = Time.now
 optimal_handler(results_handler()).each do |e|
-    puts e
+    p e
     puts " "
 end
 

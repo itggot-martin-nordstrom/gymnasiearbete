@@ -26,12 +26,12 @@ def results_handler()
     teams_hash = team_elo_hash(game_results)
     # p results
 
-    value_generator(0,0.2,0.1).each do |draw|
-        value_generator(100,100,1).each do |matches|
-            value_generator(1.0,1.1,0.01).each do |home_adv|
-                value_generator(1,5,0.4).each do |goal|
-                    value_generator(0,0,1).each do |leniency|
-                        value_generator(20,40,2).each do |k|
+    value_generator(0.5,0.5,0.1).each do |draw|
+        value_generator(1,10,1).each do |matches|
+            value_generator(1.05,1.15,0.01).each do |home_adv|
+                value_generator(1,1,0.4).each do |goal|
+                    value_generator(20,50,2).each do |leniency|
+                        value_generator(20,20,2).each do |k|
                             array = []
 
                             program_handler(teams_hash, game_results, k, draw, home_adv, matches, goal, leniency).each do |e|
@@ -96,6 +96,7 @@ def program_handler(teams_hash, results, coeficcient_k, coefficient_draw, home_a
         
         our_predictions = our_predictions(our_predictions, game[1], game[2])
         
+        # p teams_hash
         teams_hash = game[0]
     end
 
